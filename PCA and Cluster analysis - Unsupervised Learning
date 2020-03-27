@@ -6,6 +6,12 @@ Created on Wed Apr 17 22:28:37 2019
 @author: akashteckchandani
 """
 
+########Here we are identifying a significant, actionable market need using the PCA instance for which our client can develop an app to fulfil, 
+####and identifying one significant market segment using Kmeans Clustering, they can target with their new app. 
+##We also use a mixed-model of both PCA and KMeans to analyse further by generating plots.
+
+
+
 
 # Importing new libraries
 from sklearn.preprocessing import StandardScaler # standard scaler
@@ -331,6 +337,10 @@ for k in ks:
     model = KMeans(n_clusters = k)
 
 
+    
+    
+    
+    
     # Fit model to samples
     model.fit(X_scaled_reduced)
 
